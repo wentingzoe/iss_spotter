@@ -19,6 +19,9 @@ const fetchMyIP = function(callback) {
     callback(null, ip);
   });
 };
+// ***************************************
+// Fetch coordinates function declaration*
+// ***************************************
 const fetchCoordsByIP = function(ip, callback){
   request.get(`https://freegeoip.app/json/${ip}`, (err, response, body) =>{
     if (err) {
